@@ -16,6 +16,6 @@ spec:
       autoscaling.knative.dev/minScale: "1"
   source:
     git:
-      url: ssh://git@github.com/maelarge/sample
+      url: https://github.com/maelarge/sample
       ref:
         branch: main
