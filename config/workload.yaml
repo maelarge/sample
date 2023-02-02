@@ -9,7 +9,6 @@ metadata:
     tanzu.app.live.view: "true"
     tanzu.app.live.view.application.flavours: steeltoe
     tanzu.app.live.view.application.name: iterate-sample
-    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
   - name: annotations
