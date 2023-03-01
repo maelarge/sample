@@ -9,13 +9,17 @@ metadata:
     tanzu.app.live.view: "true"
     tanzu.app.live.view.application.flavours: steeltoe
     tanzu.app.live.view.application.name: iterate-sample
+    apps.tanzu.vmware.com/has-tests: "true"
 spec:
   params:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: testing_pipeline_matching_labels
+    value: 
+      apps.tanzu.vmware.com/pipeline: test-dotnet
   source:
     git:
-      url: https://github.com/maelarge/sample
+      url: ssh://git@github.com/maelarge/sample
       ref:
         branch: main
