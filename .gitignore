@@ -1,6 +1,5 @@
 # build output
 bin/
-obj/
 publish/
 
 # local tools
